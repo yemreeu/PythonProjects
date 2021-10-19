@@ -1,0 +1,16 @@
+var_1=int(input("Please enter an integer value: "))
+var_2=str(input("Please enter a string value: "))
+var_3=float(input("Please enter a float value: "))
+var_4=bool(input("Please enter a boolean value: "))
+var_5=complex(input("Please enter a complex value: "))
+
+print("The class of the value that you entered:{}".format(type(var_1)))
+print("The class of the value that you entered:{}".format(type(var_2)))
+print("The class of the value that you entered:{}".format(type(var_3)))
+print("The class of the value that you entered:{}".format(type(var_4)))
+print("The class of the value that you entered:{}".format(type(var_5)))
+The class of the value that you entered:<class 'int'>
+The class of the value that you entered:<class 'str'>
+The class of the value that you entered:<class 'float'>
+The class of the value that you entered:<class 'bool'>
+The class of the value that you entered:<class 'complex'>
