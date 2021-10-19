@@ -1,0 +1,9 @@
+print("Prime numbers having 3 digits and starting with 5 are :")
+
+for num in range(500, 600):
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
