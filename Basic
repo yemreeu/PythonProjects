@@ -1,0 +1,17 @@
+user=[]
+user_name=input("Please enter your user name: ")
+user_surname=input("Please enter your surname: ")
+user_age=int(input("Please enter your age: "))
+user_birthofyear=int(input("Please enter your birth year: "))
+user.append(user_name)
+user.append(user_surname)
+user.append(user_age)
+user.append(user_birthofyear)
+
+for i in user:
+    print(i)
+
+if user_age<=18:
+        print("You can not go out because it's too dangerous.")
+else:
+        print("You can go out.")
