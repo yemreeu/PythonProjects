@@ -1,0 +1,11 @@
+
+
+## Yaş hesaplayan fonksiyon
+
+current_year= int(input("suanki yıl degeri gir: "))
+born= int(input("dogdugun yıl degeri gir: "))
+
+def yasHesapla(born,current_year):
+    return current_year - born
+yasin= yasHesapla (born,current_year)
+print(f'şuan {yasin} yasindasiniz')
