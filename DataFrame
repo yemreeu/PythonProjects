@@ -1,0 +1,23 @@
+
+
+## Dataframe oluşturulup, multi index yapıldı, dataframe'e başlık eklendi
+
+import numpy as np
+import pandas as pd
+from pandas.core.frame import DataFrame
+
+
+ilkIndex=["Simpson","Simpson","Simpson","South Park","South Park","South Park",]
+icIndex=["Hamer","Bart","Merge","Cartman","Kenny","Kyle"]
+birlesmisIndex=list(zip(ilkIndex,icIndex))
+
+benimCizgiFilmListem=[[40,"A"],[10,"B"],[30,"C"],[50,"D"],[60,"E"],[70,"F"]]
+cizgiFilmNumpyDizisi=np.array(benimCizgiFilmListem)
+cizgiFilmDataFrame=pd.DataFrame(cizgiFilmNumpyDizisi,index=birlesmisIndex,columns=["yas","Meslek"])
+
+#başlık ekleme
+cizgiFilmDataFrame.index.names=["Film Adı, İsim"]
+
+result=cizgiFilmDataFrame
+
+print(result)
