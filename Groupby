@@ -1,0 +1,16 @@
+
+
+## Group by kullanımı
+
+import numpy as np
+import pandas as pd
+from pandas.core.frame import DataFrame
+
+maasSozlugu = { "Departman" : ["Yazılım","Yazılım","Pazarlama","Pazarlama","Hukuk","Hukuk"],
+                "Calisan İsmi" : ["Ali","Veli","Mehmet","Yunus","Emre","Ayşe"],
+                "Maas" : ["100","200","300","400","500","600"]}
+
+maasDataframe=pd.DataFrame(maasSozlugu)
+grupObjesi=maasDataframe.groupby("Departman")
+result=grupObjesi.describe()
+print(result)
