@@ -1,0 +1,21 @@
+
+## merge
+
+import numpy as np
+import pandas as pd
+from pandas.core.frame import DataFrame
+
+
+mergeSozluk1 = { "Isim" : ["ali","veli","ahmet"],
+                "Yas" : ["20","30","40"] }
+sozluk1datafram=pd.DataFrame(mergeSozluk1)
+
+mergeSozluk2 = {"Isim": ["ali","veli","ahmet"],
+                "branş": ["basket","futbol","tenis"]
+}
+
+sozluk2dataframe = pd.DataFrame(mergeSozluk2)
+
+result=pd.merge(sozluk1datafram,sozluk2dataframe,on="Isim")
+
+print(result)
